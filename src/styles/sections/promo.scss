@@ -1,0 +1,107 @@
+.promo {
+    min-height: 768px;
+    height: 1px;
+    padding: 0 28px;
+    background: url(../../assets/img/main_bg.jpg) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding-left: 65px;
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            top: 10%;
+            width: 50px;
+            height: 1px;
+            background: $border;
+        }
+    }
+    h1 {
+        font: 400 45px $playfair;
+        color: $dark-text;
+    }
+    h4 {
+        margin-top: 16px;
+    }
+    &__button {
+        margin-top: 64px;
+        min-width: 50%;
+    }
+    &__descr {
+        max-width: 70%;
+        margin-top: 39px;
+        font-size: 14px;
+        line-height: 21px;
+        color: $brown-dark;
+    }
+    &__img {
+        flex: 0.9;
+        position: relative;
+    }
+    &__cost {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        font: 16px $prata;
+        &::after {
+            content: "";
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 15px;
+            width: 50px;
+            height: 1px;
+            background: $border;
+        }
+    }
+    &__diametr {
+        position: absolute;
+        bottom: 15%;
+        right: 0;
+        font: 16px $prata;
+        &::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+            width: 50px;
+            height: 1px;
+            background: $border;
+        }
+    }
+    @media(max-width: ($md3 + px)) {
+        padding: 30px 0;
+        min-height: 500px;
+        &__wrapper {
+            max-width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        &__text {
+            padding-left: 0px;
+            min-width: 60%;
+            align-items: center;
+            &::before {
+                display: none;
+            }
+        }
+        &__cost, &__diametr {
+            display: none;
+        }
+    }
+}

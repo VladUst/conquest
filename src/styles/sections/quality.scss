@@ -1,0 +1,48 @@
+.quality {
+    min-height: 519px;
+    padding: 79px 0 21px;
+    background: url(../../assets/img/bg_banner.jpg) center (center/cover) no-repeat;
+    &__wrapper {
+        padding: 0 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__descr {
+        margin-top: 38px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $brown-dark;
+    }
+    &__button {
+        margin-top: 45px;
+        min-width: 50%;
+    }
+    &__slide {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font: 12px $prata;
+    }
+    @media(max-width: ($md3 + px)) {
+        padding: 0;
+        &__wrapper {
+            padding: 10px;
+            flex-direction: column;
+        }
+        &__slider {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

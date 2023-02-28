@@ -1,0 +1,37 @@
+.popular {
+    min-height: 720px;
+    padding: 80px 0;
+    &__title {
+        text-align: center;
+    }
+    &__more {
+        width: max-content;
+        margin-left: auto;
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $brown-dark;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #C4C0B6;
+        }
+    }
+    &__cards {
+        display: flex;
+        align-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 25px;
+    }
+    @media(max-width: ($md3 + px)) {
+        padding: 0;
+        &__cards {
+            flex-wrap: wrap;
+        }
+        &__card {
+            flex-grow: 1;
+        }
+        &__more {
+            margin-top: 40px;
+        }
+    }
+}

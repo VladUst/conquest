@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@400;500;700&display=swap');
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+@import "./blocks/container";
+@import "./blocks/button";
+@import "./blocks/link";
+@import "./blocks/header";
+@import "./blocks/title";
+@import "./sections/promo";
+@import "./sections/popular";
+@import "./blocks/card";
+@import "./sections/quality";
+@import "./sections/news";
+@import "./blocks/footer";
+@import "./blocks/info";
+
+body {
+    font: 400 14px/16px 'Roboto', sans-serif;
+}
